@@ -33,22 +33,13 @@ button {
   #audio-player-container::before {
     position: absolute;
     content: '';
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
     left: -2px;
     top: -2px;
     background: linear-gradient(to left, #007db5, #ff8a00);
     z-index: -1;
     border-radius: 50%;
-  }
-  p {
-    position: absolute;
-    top: -18px;
-    right: 5%;
-    padding: 0 5px;
-    margin: 0;
-    font-size: 28px;
-    background: #fff;
   }
   #play-icon {
     margin: 25%;
@@ -98,6 +89,15 @@ button {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     align-items: center;
   }
+  .backdrp {
+    position: relative;
+    background: rgba(250, 244, 244, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.692);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    align-items: center;
+  }
 
   /* center class */
   .center {
@@ -129,4 +129,125 @@ button {
     .center {
      height: auto;
     }
+    .wrapper {
+      transform: translate( -10%, 0); 
+    }
   }
+
+  #navbarBottom {
+    border-radius: 25px 25px 0px 0px;
+    padding: 16px;
+  }
+
+
+  /* Icons */
+  .wrapper{
+    position: absolute;
+    width: 100%;
+    /* transform: translate(-50%,-50%); */
+    /* transform: translate( -10%, 0); */
+}
+.wrapper ul{
+  list-style: none;
+}
+.wrapper ul li{
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.wrapper ul li .fa{
+  color: #444c47;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+.wrapper ul li .facebook{
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa-facebook{
+  color: #3b5998;
+  text-shadow: 0 0 15px #6786c9;
+  transition: all 0.5s ease;
+}
+.wrapper ul li .twitter{
+  border: 5px solid  #00aced;
+  box-shadow: 0 0 15px  #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa-twitter{
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li .instagram{
+  border: 5px solid rgb(var(--lightYellow));
+  box-shadow: 0 0 15px rgb(var(--lightYellow));
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa-instagram{
+  color:rgb(var(--lightYellow));
+  text-shadow: 0 0 15px rgb(var(--lightYellow));
+  transition: all 0.5s ease;
+}
+.wrapper ul li:hover:google{
+  border: 5px solid  #dd4b39;
+  box-shadow: 0 0 15px  #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-google{
+  color: #dd4b39;
+  text-shadow: 0 0 15px  #dd4b39;
+  transition: all 0.5s ease;
+}
+.wrapper ul li .whatsapp{
+    border: 5px solid  #4dc247;
+    box-shadow: 0 0 15px  #4dc247;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa-whatsapp{
+    color: #4dc247;
+    text-shadow: 0 0 15px  #4dc247;
+    transition: all 0.5s ease;
+}
+
+
+
+/* ---------------------------- PORTFOLIO ------------------------- */
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item{
+	/* width:100%; */
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+.content-container {
+  background: linear-gradient(to top, rgba(245, 176, 176, 0.3), transparent);
+  border-radius: 8px;
+}
