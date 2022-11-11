@@ -1,0 +1,132 @@
+:root {
+    --lightYellow : 240,255,0;
+    --meduimOrange : #ff9a00;
+    --darkRed : 255,0,0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+}  
+
+
+button {
+    padding: 0;
+    border: 0;
+    background: inherit;
+    cursor: pointer;
+    outline: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  #audio-player-container {
+    position: relative;
+    width: 75%;
+    max-width: 160px;
+    height:px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  
+  #audio-player-container::before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(to left, #007db5, #ff8a00);
+    z-index: -1;
+    border-radius: 50%;
+  }
+  p {
+    position: absolute;
+    top: -18px;
+    right: 5%;
+    padding: 0 5px;
+    margin: 0;
+    font-size: 28px;
+    background: #fff;
+  }
+  #play-icon {
+    margin: 25%;
+    width: 80px;
+    height: 80px;
+   }
+  path {
+    stroke: rgb( var(--darkRed) );
+  }
+  .parallax {
+    /* The image used */
+    background-image: linear-gradient( to right, rgb(var(--lightYellow), 0.4), rgba(var(--darkRed),0.2) ), url(../assets/background-1.jpg);
+    background-size: cover;
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  #logo {
+    position: relative;
+    left: 50%;
+    margin-top: 8px;
+    transform: translateX(-50%);
+  }
+  #playButton {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+  }
+  /* Backdrop Circle Class glassmorphism */
+  .backdrp-circle {
+    position: relative;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 50%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    align-items: center;
+  }
+
+  /* center class */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+  }
+
+  @media only screen and (max-width: 720px) {
+    .bottom-button {
+      position: fixed;
+  left: 0;
+  bottom: 0;
+    }
+
+    #audio-player-container {
+      border-radius: 0;
+      width: auto;
+    }
+    #audio-player-container::before {
+      border-radius: 0;
+    }
+
+    .backdrp-circle {
+      margin-top: 32px;
+      width: 65%;
+    }
+
+    .center {
+     height: auto;
+    }
+  }
