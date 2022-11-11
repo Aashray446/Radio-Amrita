@@ -28,3 +28,18 @@ playIconContainer.addEventListener('click', () => {
         audio.pause();
     }
 });
+
+playIconContainer.addEventListener('touchend', () => {
+
+    let audio = document.querySelector('audio');
+
+    if (state === 'play') {
+        animation.playSegments([14, 27], true);
+        audio.play();
+        state = 'pause';
+    } else {
+        animation.playSegments([0, 14], true);
+        state = 'play';
+        audio.pause();
+    }
+});
