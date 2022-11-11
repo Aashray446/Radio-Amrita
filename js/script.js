@@ -14,7 +14,7 @@ const animation = lottieWeb.loadAnimation({
 
 animation.goToAndStop(14, true);
 
-playIconContainer.addEventListener('click', () => {
+const playFunction = () => {
 
     let audio = document.querySelector('audio');
 
@@ -27,19 +27,8 @@ playIconContainer.addEventListener('click', () => {
         state = 'play';
         audio.pause();
     }
-});
+}
 
-playIconContainer.addEventListener('touchend', () => {
-
-    let audio = document.querySelector('audio');
-
-    if (state === 'play') {
-        animation.playSegments([14, 27], true);
-        audio.play();
-        state = 'pause';
-    } else {
-        animation.playSegments([0, 14], true);
-        state = 'play';
-        audio.pause();
-    }
-});
+// playIconContainer.addEventListener('click', playFunction, false);
+playIconContainer.addEventListener('mouseup', playFunction, false);
+// playIconContainer.addEventListener("mouseup" playFunction, false);
