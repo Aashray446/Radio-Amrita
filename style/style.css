@@ -57,16 +57,18 @@ button {
     background-size: cover;
     /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
   
-    /* Set a specific height */
-    min-height: 500px; 
   
     /* Create the parallax scrolling effect */
+    /* background-attachment: scroll; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
     height: 100vh;
+    width: 100%;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
   }
   #logo {
     position: relative;
@@ -142,8 +144,6 @@ button {
   }
 
   #navbarBottom {
-    position: sticky;
-    bottom : 16px;
     border-radius: 25px 25px 0px 0px;
     padding: 16px;
 
@@ -248,14 +248,14 @@ button {
     
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     
-      text-shadow:
+      /* text-shadow:
           -0.2rem -0.2rem 1rem #fff,
           0.2rem 0.2rem 1rem #fff,
           0 0 2rem var(--neon-text-color),
           0 0 4rem var(--neon-text-color),
           0 0 6rem var(--neon-text-color),
           0 0 8rem var(--neon-text-color),
-          0 0 10rem var(--neon-text-color);
+          0 0 10rem var(--neon-text-color); */
       
       box-shadow:
           0 0 .5rem #fff,
@@ -267,7 +267,6 @@ button {
   }
   
   20%, 24%, 55% {        
-      text-shadow: none;
       box-shadow: none;
   }    
 }
