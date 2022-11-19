@@ -85,10 +85,10 @@ button {
   /* Backdrop Circle Class glassmorphism */
   .backdrp-circle {
     position: relative;
-    background: rgba( 255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.171);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
     border-radius: 50%;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     align-items: center;
