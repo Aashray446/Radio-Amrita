@@ -24,121 +24,161 @@
     <div class="parallax container-fluid">
 
         <div class="container">
-
+            <img class="side" src="./assets/logo.svg" id="logo" width="150px" alt="">
             <div style="height: 100vh;">
-                <img src="./assets/logo.svg" id="logo" width="150px" alt="">
 
-                <div class="row">
-                    <div class="col-md-8 col-12 mt-4 mt-md-0 text-center">
-                        <img src="./assets/logo.png" class="backdrp-circle">
-                    </div>
+                <div class="backdrp-circle" id="playButton">
+                    <svg viewBox="0 0 115 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="logo_adobe_express 1">
+                            <path id="Vector"
+                                d="M30.672 66.7467C31.3902 67.5119 32.0613 68.2088 32.926 69.1069C30.8957 69.1069 29.1546 69.1273 27.4148 69.0869C27.1237 69.0802 26.7456 68.8825 26.566 68.6491C25.5174 67.2866 24.3992 65.9553 23.5499 64.4705C23.1476 63.767 23.0287 62.6688 23.2563 61.8908C23.4996 61.0588 24.4947 60.9253 25.394 60.893C26.0348 60.8699 26.8602 60.7716 27.2442 60.3633C27.5844 60.0016 27.6393 59.077 27.4272 58.5672C27.2548 58.153 26.5257 57.8358 25.9974 57.7435C25.2168 57.607 24.3934 57.7435 23.5918 57.6988C22.5971 57.6434 22.2309 58.0799 22.2405 59.0691C22.2724 62.3873 22.2526 65.706 22.2526 69.1072C20.5699 69.1072 18.9438 69.1072 17.1972 69.1072C17.1972 67.3377 17.1969 65.6148 17.1972 63.8919C17.1977 61.4587 17.1748 59.0253 17.2073 56.5926C17.231 54.8196 18.0352 53.8277 19.723 53.7926C22.8962 53.7267 26.0748 53.7592 29.2468 53.8736C30.8794 53.9326 32.1646 54.9948 32.3124 56.6212C32.48 58.466 32.4028 60.3776 32.1086 62.2073C31.8628 63.7354 30.6013 64.5078 28.8014 64.6702C29.5194 65.461 30.0722 66.0698 30.672 66.7467Z"
+                                fill="#FBF6F6" />
+                            <path id="Vector_2"
+                                d="M97.7538 54.1139C100.56 55.052 101.346 57.2432 101.38 59.8251C101.403 61.5454 101.35 63.2878 101.099 64.9854C100.782 67.1255 99.4624 68.4741 97.3154 68.9084C94.2853 69.5213 91.2451 69.5756 88.2526 68.7719C86.4327 68.2832 85.2395 66.9112 85.0277 65.0781C84.7728 62.8729 84.7018 60.6064 84.899 58.398C85.1247 55.87 86.7539 54.2846 89.2559 53.8998C92.0574 53.4688 94.8817 53.3706 97.7538 54.1139ZM91.5005 65.2076C92.2227 65.2573 92.9458 65.3586 93.6669 65.3461C95.2087 65.3192 95.9253 64.7456 96.1006 63.1661C96.235 61.9554 96.2072 60.7055 96.0764 59.4923C95.9639 58.4483 95.2588 57.669 94.1893 57.6379C92.8759 57.5997 91.3589 57.1047 90.4356 58.6028C90.1839 59.0111 90.0367 59.5284 89.9877 60.0108C89.9025 60.8497 89.9029 61.7009 89.9187 62.5459C89.9392 63.6463 90.3039 64.5818 91.5005 65.2076Z"
+                                fill="#FBF7F7" />
+                            <path id="Vector_3"
+                                d="M66.813 69.0469C63.9522 69.081 61.194 69.1273 58.4362 69.1092C57.0756 69.1003 56.1998 68.2208 56.1876 66.8447C56.1559 63.2892 56.1544 59.7329 56.191 56.1774C56.2062 54.7004 57.0014 53.8756 58.472 53.8453C61.0291 53.7925 63.5939 53.726 66.1447 53.8657C68.9966 54.0218 70.807 55.6566 71.0991 58.5011C71.3251 60.7013 71.3426 62.9779 71.0426 65.1633C70.7379 67.3831 69.19 68.715 66.813 69.0469ZM63.1125 65.186C65.3199 65.2034 65.9239 64.7209 66.2626 62.0431C66.2866 61.8531 66.2781 61.6582 66.2751 61.4658C66.2329 58.7338 65.2163 57.4241 62.5571 57.5538C61.532 57.6038 61.1639 57.9471 61.1716 58.8776C61.184 60.3778 61.2244 61.8777 61.2348 63.3779C61.2469 65.1486 61.2385 65.1487 63.1125 65.186Z"
+                                fill="#FCF8F7" />
+                            <path id="Vector_4"
+                                d="M58.7253 42.1639C57.4863 42.194 56.3001 42.1605 55.1157 42.0938C54.5267 42.0606 53.9411 41.9665 53.3563 41.9001C53.1714 43.6312 54.0133 44.9661 55.5242 45.5431C56.8593 46.0531 58.8147 45.6009 59.4754 44.3626C60.4805 42.4787 61.2786 40.4812 62.1385 38.5203C62.4606 37.7859 62.7006 37.0152 62.9939 36.2674C63.8176 34.1673 63.0301 32.049 60.9215 31.425C59.9587 31.14 59.7895 30.5196 59.5254 29.8584C59.2876 29.2632 59.2064 28.6043 59.0402 27.9065C61.7485 27.6109 63.9535 28.5629 65.4903 30.7524C66.9125 32.7786 67.2232 35.095 66.2739 37.4423C65.2261 40.0334 64.0864 42.587 62.9767 45.1525C61.4976 48.5721 57.2963 50.1014 53.7932 48.5036C50.4621 46.9844 48.8546 42.7302 50.3399 39.4433C50.5992 38.8694 50.8564 38.651 51.5416 38.7516C54.2181 39.1443 56.9075 39.447 59.7257 39.7999C59.3859 40.6206 59.0824 41.3536 58.7253 42.1639Z"
+                                fill="#FAF3F3" />
+                            <path id="pause2"
+                                d="M37 64.228C37 60.7596 37 57.4072 37 54C38.6873 54 40.3169 54 42.0106 54C42.0106 59.075 42.0106 64.1136 42.0106 69.2281C40.387 69.2281 38.7638 69.2281 37 69.2281C37 67.6224 37 65.9832 37 64.228Z"
+                                fill="white" />
+                            <path id="pause1"
+                                d="M45 64.228C45 60.7596 45 57.4072 45 54C46.6873 54 48.3169 54 50.0106 54C50.0106 59.075 50.0106 64.1136 50.0106 69.2281C48.387 69.2281 46.7638 69.2281 45 69.2281C45 67.6224 45 65.9832 45 64.228Z"
+                                fill="white" />
+                            <path id="play"
+                                d="M51.8769 61.0753C52.1246 63.2877 51.1903 64.5265 49.2294 65.299C45.013 66.96 40.8532 68.7671 36.5879 70.5487C36.5879 68.754 36.5879 67.0696 36.5879 65.258C39.8881 64.0495 43.2352 62.8238 46.9046 61.48C46.3496 61.1473 46.1025 60.9392 45.818 60.8379C43.1548 59.8895 40.4912 58.9416 37.8144 58.0334C36.875 57.7147 36.3869 57.2615 36.5077 56.1384C36.6424 54.8858 36.5386 53.6072 36.5386 52.2039C38.5823 53.0549 40.5681 53.8799 42.5525 54.7085C44.9769 55.7209 47.3951 56.7485 49.8256 57.7459C51.2784 58.3422 51.9221 59.4289 51.8769 61.0753Z" />
+                            <path id="Vector_5"
+                                d="M75.5086 64.0319C75.5086 60.5635 75.5086 57.211 75.5086 53.8038C77.1959 53.8038 78.8254 53.8038 80.5191 53.8038C80.5191 58.8789 80.5191 63.9174 80.5191 69.0319C78.8956 69.0319 77.2723 69.0319 75.5086 69.0319C75.5086 67.4262 75.5086 65.787 75.5086 64.0319Z"
+                                fill="#FBF7F6" />
+                            <path id="Vector_6"
+                                d="M35.8214 75.9439C35.6193 75.4204 35.4525 74.9854 35.2857 74.5503C35.1836 74.5662 35.0815 74.582 34.9794 74.5978C34.9794 76.8287 34.9794 79.0595 34.9794 81.3371C34.2495 81.3371 33.6933 81.3371 33.0468 81.3371C33.0468 78.4437 33.0042 75.5872 33.097 72.7351C33.1096 72.3478 33.7452 71.7701 34.1891 71.6529C35.0666 71.4211 35.8598 71.7756 36.2456 72.6935C36.6896 73.7502 37.1021 74.8207 37.5136 75.8909C37.9378 76.994 38.3444 78.104 38.8721 79.5143C39.2857 78.6116 39.6288 77.931 39.9137 77.2265C40.5188 75.7301 41.0655 74.2093 41.6905 72.7218C42.1209 71.6975 43.0122 71.314 44.0095 71.7545C44.3698 71.9136 44.8394 72.3731 44.8471 72.7053C44.9134 75.5526 44.8852 78.4022 44.8852 81.319C44.2317 81.319 43.6738 81.319 42.8972 81.319C42.8972 79.1459 42.8972 76.9266 42.8972 74.7073C42.7817 74.6903 42.6662 74.6734 42.5507 74.6565C42.0969 75.7737 41.6333 76.8871 41.1924 78.0096C40.8698 78.831 40.6618 79.7125 40.2375 80.4735C40.0051 80.8903 39.4701 81.249 38.9997 81.3901C38.3354 81.5894 37.8532 81.2055 37.5979 80.523C37.0354 79.0193 36.4391 77.5285 35.8214 75.9439Z"
+                                fill="#F6EAEA" />
+                            <path id="Vector_7"
+                                d="M51.5563 53.7874C50.8398 53.6619 50.8598 53.3012 51.1544 52.8735C51.9606 51.7026 51.4247 51.0747 50.4218 50.3131C47.6631 48.2178 46.451 45.3021 46.3935 41.7468C47.7649 42.2112 48.8539 42.4617 49.295 44.224C50.6041 49.4536 56.6476 51.58 60.9679 48.6875C62.2565 47.8248 63.06 48.9336 64.2792 49.1935C62.8318 50.721 61.3136 51.8214 59.4358 52.1248C57.6234 52.4177 55.7637 52.4122 53.7516 52.5496C53.5638 52.9551 53.261 53.6091 52.9142 54.3579C52.459 54.1611 52.0489 53.9838 51.5563 53.7874Z"
+                                fill="#F8EFEF" />
+                            <path id="Vector_8"
+                                d="M60.8598 80.7859C61.0247 80.9763 61.1213 81.1306 61.2117 81.2749C59.7604 81.7996 58.699 81.3319 57.7947 80.1962C57.2989 79.5735 56.6001 79.1164 56.0954 78.4993C55.7864 78.1215 55.4349 77.5129 55.5428 77.1362C55.6333 76.8199 56.3532 76.6694 56.8108 76.4871C56.9765 76.421 57.1894 76.4758 57.3808 76.4751C59.0876 76.4692 59.7342 75.4582 58.9977 73.8687C58.8825 73.6201 58.5072 73.371 58.2312 73.3445C57.4009 73.2647 56.5558 73.3444 55.7247 73.2693C54.7362 73.18 54.4456 73.6602 54.4529 74.5553C54.4711 76.7877 54.4589 79.0204 54.4589 81.3232C53.8199 81.3232 53.2637 81.3232 52.5312 81.3232C52.5312 80.6719 52.531 79.9956 52.5313 79.3194C52.5321 77.3504 52.515 75.3812 52.5408 73.4126C52.5569 72.1867 53 71.7577 54.1959 71.7223C55.6398 71.6795 57.0841 71.6491 58.5282 71.617C60.0424 71.5833 61.0707 72.5293 61.1681 74.0407C61.173 74.1177 61.174 74.195 61.1766 74.2722C61.2656 76.9417 60.9752 77.3781 58.3278 78.2835C59.1978 79.1544 59.9947 79.952 60.8598 80.7859Z"
+                                fill="#F3E3E3" />
+                            <path id="Vector_9"
+                                d="M19.3263 78.4733C18.9378 79.482 18.5825 80.4064 18.2182 81.3542C17.5879 81.3542 16.9866 81.3542 16.189 81.3542C16.6103 80.3031 16.9826 79.3341 17.3853 78.3781C18.1832 76.484 18.9361 74.5659 19.8459 72.7274C20.0958 72.2225 20.7886 71.8057 21.3624 71.6323C22.1151 71.4049 22.6373 71.9252 22.9365 72.6432C24.1275 75.5009 25.3275 78.3548 26.5373 81.2414C24.5305 81.5954 24.5493 81.5857 23.9238 79.93C23.1308 77.8311 22.2986 75.7474 21.3533 73.3237C20.6008 75.2355 19.9802 76.8123 19.3263 78.4733Z"
+                                fill="#F4E8E8" />
+                            <path id="Vector_10"
+                                d="M97.1435 76.5108C96.7647 75.5084 96.4071 74.5938 95.9394 73.3978C95.1597 75.2943 94.4779 76.9426 93.8053 78.5946C93.6028 79.0919 93.4369 79.6042 93.2346 80.1015C92.6124 81.6314 92.6087 81.6299 90.7696 81.231C91.9001 78.5092 93.0231 75.7935 94.1572 73.0826C94.497 72.2702 94.9351 71.5695 95.9708 71.5868C96.9481 71.6031 97.3315 72.254 97.6574 73.0462C98.7771 75.7679 99.9238 78.4783 101.112 81.3175C100.351 81.3175 99.7587 81.3175 99.0679 81.3175C98.4489 79.7827 97.8068 78.1906 97.1435 76.5108Z"
+                                fill="#F4E8E8" />
+                            <path id="Vector_11"
+                                d="M55.1835 36.6719C54.8463 37.8363 54.324 38.4724 53.0491 38.0558C52.4579 37.8626 51.7867 37.9184 51.0166 37.8491C51.9026 35.6813 52.6377 33.6379 53.5639 31.6868C54.4551 29.8095 56.0225 28.6549 58.1045 28.0053C58.4673 29.1511 58.7862 30.1585 59.1272 31.2356C56.324 31.9805 56.2131 34.6014 55.1835 36.6719Z"
+                                fill="#F8F0F0" />
+                            <path id="Vector_12"
+                                d="M79.6705 71.7228C81.9813 71.7238 84.196 71.7238 86.5044 71.7238C86.5044 72.2248 86.5044 72.6943 86.5044 73.3136C85.3342 73.3136 84.1684 73.3136 82.9031 73.3136C82.9031 76.0715 82.9031 78.6856 82.9031 81.3402C82.2027 81.3402 81.6069 81.3402 80.9505 81.3402C80.9505 78.6843 80.9505 76.0769 80.9505 73.3324C79.7024 73.3324 78.5087 73.3324 77.2697 73.3324C77.2697 72.7099 77.2697 72.2265 77.2697 71.7217C78.0791 71.7217 78.8267 71.7217 79.6705 71.7228Z"
+                                fill="#F6EAEA" />
+                            <path id="Vector_13"
+                                d="M70.5674 79.4977C70.5674 80.1747 70.5674 80.7463 70.5674 81.3587C69.9164 81.3587 69.3489 81.3587 68.6961 81.3587C68.6961 78.1636 68.6961 74.98 68.6961 71.6379C69.28 71.669 69.8644 71.7001 70.5674 71.7376C70.5674 74.3255 70.5674 76.8589 70.5674 79.4977Z"
+                                fill="#F0DBDB" />
+                        </g>
+                    </svg>
 
-                    <div class=" col-md-4 col-12" style=" height: 80vh;">
-                        <audio>
-                            <source src="https://159.65.144.25:8000/radioAmrita.mp3" type="audio/mpeg">
-                        </audio>
-                        <div id="playButton">
-                            <div id="audio-player-container">
-                                <button id="play-icon"></button>
-                            </div>
-                        </div>
-                    </div>
 
+                    <audio>
+                        <source src="https://159.89.171.13.nip.io:8000/radio.mp3" type="audio/mpeg">
+                    </audio>
                 </div>
 
             </div>
-
-            <hr class="mt-2 mb-5">
-
-
-            <h3
-                class="mbr-section-subtitle align-center text-white mbr-light pb-3 mbr-fonts-style text-center display-2">
-                Gallery
-            </h3>
-
-            <hr class="mt-2 mb-2">
-
-            <div class="row text-center text-lg-start">
-
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="./assets/gh (1).jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="./assets/gh (2).jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="./assets/gh (3).jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="./assets/gh (4).jpg">
-                    </a>
-                </div>
-            </div>
-
-            <hr class="mt-5 mb-5">
-
-            <div class="row  justify-content-center content-container">
-                <div class="mbr-white col-md-10 text-center">
-                    <!-- <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-5">Responsive
-                        Bootstrap About Us Page Template</h1> -->
-                    <!-- <h3 class="mbr-section-subtitle align-center text-white mbr-light pb-3 mbr-fonts-style display-2">
-                        About Us
-                    </h3> -->
-                    <p class="mbr-text text-white align-center pb-3 mbr-fonts-style display-7">
-                        <span class="display-6 d-block mb-3">RADIO AMRITA : THE VOICE OF AMRITIANS</span>
-                        Keeping you connected to uni
-                        one pit stop for all the campus updates,opportunities,entertainment and much more
-
-                        This is a community radio station based in Amritapuri campus
-                        It is an initiative taken by the students at Amrita University with the intention to connect
-                        people in and around the campus.
-                        The station services the University, our students globally, staff and the greater Amrita
-                        community.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="mt-5 mb-5"></div>
-
-            <div class="navbar" id="navbarBottom">
-                <div class="wrapper">
-                    <ul class="d-flex justify-content-around">
-                        <li class="facebook"> <a href="https://www.facebook.com/watch/radioamrita/"><i
-                                    class="fa-brands fa-facebook fa-2x" aria-hidden="true"></a></i></li>
-                        <li class="twitter"> <a href="https://www.instagram.com/radioamrita/"><i
-                                    class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-                        <li class="instagram"><a href="https://www.instagram.com/radioamrita/"><i
-                                    class="fa-brands fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-                        <li class="envelope"><a href="mailto:radioamrita@am.amrita.edu"><i class="fa fa-envelope fa-2x"
-                                    aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="text-center text-white">
-
-
-                <!-- Copyright -->
-                <div class="text-center p-3">
-                    ©
-                    <a class="text-white glow" href="https://amfoss.in/">Radio Amrita</a>
-                    | Designed By
-                    <a href="htts://amfoss.in"><img src="./assets/amFoss.svg" height="100" width="100" alt=""></a>
-                </div>
-                <!-- Copyright -->
-            </div>
-
 
         </div>
+        <hr class="mt-2 mb-5">
+
+
+        <h3 class="mbr-section-subtitle align-center text-white mbr-light pb-3 mbr-fonts-style text-center display-2">
+            Gallery
+        </h3>
+
+        <hr class="mt-2 mb-2">
+
+        <div class="row text-center text-lg-start">
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="./assets/gh (1).jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="./assets/gh (2).jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="./assets/gh (3).jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="./assets/gh (4).jpg">
+                </a>
+            </div>
+        </div>
+
+        <hr class="mt-5 mb-5">
+
+        <div class="row  justify-content-center content-container">
+            <div class="mbr-white col-md-10 text-center">
+                <!-- <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-5">Responsive
+                        Bootstrap About Us Page Template</h1> -->
+                <!-- <h3 class="mbr-section-subtitle align-center text-white mbr-light pb-3 mbr-fonts-style display-2">
+                        About Us
+                    </h3> -->
+                <p class="mbr-text text-white align-center pb-3 mbr-fonts-style display-7">
+                    <span class="display-6 d-block mb-3 font-weight-bold" style="font-weight: 550;">RADIO AMRITA : THE
+                        VOICE OF AMRITIANS</span>
+                    Keeping you connected to uni
+                    one pit stop for all the campus updates,opportunities,entertainment and much more
+
+                    This is a community radio station based in Amritapuri campus
+                    It is an initiative taken by the students at Amrita University with the intention to connect
+                    people in and around the campus.
+                    The station services the University, our students globally, staff and the greater Amrita
+                    community.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-5"></div>
+
+        <div class="navbar" id="navbarBottom">
+            <div class="wrapper">
+                <ul class="d-flex justify-content-around">
+                    <li class="facebook"> <a href="https://www.facebook.com/watch/radioamrita/"><i
+                                class="fa-brands fa-facebook fa-2x" aria-hidden="true"></a></i></li>
+                    <li class="twitter"> <a href="https://www.instagram.com/radioamrita/"><i
+                                class="fa-brands fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/radioamrita/"><i
+                                class="fa-brands fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="envelope"><a href="mailto:radioamrita@am.amrita.edu"><i class="fa fa-envelope fa-2x"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="text-center text-white">
+
+            <!-- Copyright -->
+            <div class="text-center">
+                ©
+                <a class="text-white glow" href="#top">Radio Amrita</a>
+                | Designed By
+                <a href="https://amfoss.in" target="_blank"><img src="./assets/amFoss.svg" height="100" width="100"
+                        alt=""></a>
+            </div>
+            <!-- Copyright -->
+        </div>
+
+
+    </div>
 
     </div>
 

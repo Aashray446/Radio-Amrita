@@ -3,7 +3,10 @@
     --meduimOrange : #ff9a00;
     --darkRed : 255,0,0;
     --neon-text-color: rgba(255, 68, 0, 0.603);
-    --neon-border-color: #ff6600;
+    --neon-border-color: #ff6600e5;
+}
+html {
+  scroll-behavior:smooth;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -11,7 +14,6 @@ body {
     font-weight: 400;
     line-height: 1.9;
 }  
-
 
 button {
     padding: 0;
@@ -21,39 +23,11 @@ button {
     outline: none;
     width: 40px;
     height: 40px;
-  }
+}
 
-  #audio-player-container {
-    position: relative;
-    width: 75%;
-    max-width: 160px;
-    height:px;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-  }
-  
-  #audio-player-container::before {
-    position: absolute;
-    content: '';
-    width: calc(100% + 6px);
-    height: calc(100% + 6px);
-    left: -2px;
-    top: -2px;
-    background: linear-gradient(to left, #007db5, #ff8a00);
-    z-index: -1;
-    border-radius: 50%;
-  }
-  #play-icon {
-    margin: 25%;
-    width: 84px;
-    height: 84px;
-   }
-  path {
-    stroke: rgb( var(--darkRed) );
-  }
   .parallax {
     /* The image used */
-    background-image: linear-gradient( to right, rgb(var(--lightYellow), 0.4), rgba(var(--darkRed),0.2) ), url(../assets/background-1.jpg);
+    background-image: linear-gradient( to right, rgb(var(--lightYellow), 0.6), rgba(var(--lightYellow),0.1) ), url(../assets/background-1.jpg);
     background-size: cover;
     /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
   
@@ -72,19 +46,20 @@ button {
   }
   #logo {
     position: relative;
+    left: 2vw;
+    margin-top: 4vh;
+    transform: translateX(-50%);
+    /* position: relative;
     left: 50%;
     margin-top: 8px;
-    transform: translateX(-50%);
-  }
-  #playButton {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-25%, -50%);
+    transform: translateX(-50%); */
   }
   /* Backdrop Circle Class glassmorphism */
   .backdrp-circle {
-    position: relative;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 0.171);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -115,44 +90,14 @@ button {
     align-items: center;   
   }
 
-  @media only screen and (max-width: 720px) {
-    .bottom-button {
-      position: fixed;
-  left: 0;
-  bottom: 0;
-    }
-
-    #audio-player-container {
-      border-radius: 8px;
-      width: auto;
-    }
-    #audio-player-container::before {
-      border-radius: 8px;
-    }
-
-    .backdrp-circle {
-      margin-top: 32px;
-      width: 65%;
-    }
-
-    .center {
-     height: auto;
-    }
-    .wrapper {
-      transform: translate( -10%, 0); 
-    }
-  }
-
   #navbarBottom {
     border-radius: 25px 25px 0px 0px;
     padding: 16px;
-
   }
 
-
-  /* Icons */
+  /*  ------------------------------- Icons --------------------------- */
   .wrapper{
-    position: absolute;
+    position: relative;
     width: 100%;
     /* transform: translate(-50%,-50%); */
     /* transform: translate( -10%, 0); */
@@ -225,6 +170,45 @@ button {
   border-radius: 8px;
 }
 
+/* PLAY BUTTON */
+.button {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+}
+.button.paused {
+  border-style: double;
+  border-width: 0px 0 0px 60px;
+}
+.button:hover {
+  border-color: transparent transparent transparent #404040;
+}
+
+
+svg {
+  height: 70vh;
+  width: 70vh;
+  cursor: pointer;
+}
+#logo {
+  width: 30vh;
+}
+
+/* Play Button */
+#play,#pause1,#pause2 {
+  fill: rgb(var(--lightYellow));
+  transition: all 1.5s ease;
+  cursor: pointer;
+
+}
+
 /* Branding */
 .glow {
   color: #fff;
@@ -248,15 +232,6 @@ button {
     
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     
-      /* text-shadow:
-          -0.2rem -0.2rem 1rem #fff,
-          0.2rem 0.2rem 1rem #fff,
-          0 0 2rem var(--neon-text-color),
-          0 0 4rem var(--neon-text-color),
-          0 0 6rem var(--neon-text-color),
-          0 0 8rem var(--neon-text-color),
-          0 0 10rem var(--neon-text-color); */
-      
       box-shadow:
           0 0 .5rem #fff,
           inset 0 0 .5rem #fff,
@@ -269,4 +244,40 @@ button {
   20%, 24%, 55% {        
       box-shadow: none;
   }    
+}
+
+
+@media only screen and (max-width: 1007px) {
+
+  #logo {
+    left: 50%;
+    margin-top: 8px;
+    transform: translateX(-50%);
+  }
+
+  .wrapper {
+    position: fixed;
+    bottom:16px;
+  }
+  .bottom-button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+
+  
+  svg{
+    height: 35vh;
+    width: 35vh;
+  }
+
+  #logo {
+    width: 70%;
+  }
+  .center {
+   height: auto;
+  }
+  .wrapper {
+    transform: translate( -10%, 0); 
+  }
 }

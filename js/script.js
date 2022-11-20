@@ -1,34 +1,32 @@
-import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
+const playButton = document.getElementById('playButton');
+const play = document.getElementById('play');
+const pause1 = document.getElementById('pause1');
+const pause2 = document.getElementById('pause2');
+const audio = document.querySelector('audio');
+pause1.style.opacity = '0';
+pause2.style.opacity = '0';
 
-const playIconContainer = document.getElementById('play-icon');
+
+
 let state = 'play';
-
-const animation = lottieWeb.loadAnimation({
-    container: playIconContainer,
-    path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json',
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    name: "Demo Animation",
-});
-
-animation.goToAndStop(14, true);
 
 const playFunction = () => {
 
-    let audio = document.querySelector('audio');
+
 
     if (state === 'play') {
-        animation.playSegments([14, 27], true);
+        play.style.opacity = '0';
+        pause1.style.opacity = '1';
+        pause2.style.opacity = '1';
         audio.play();
         state = 'pause';
     } else {
-        animation.playSegments([0, 14], true);
+        pause1.style.opacity = '0';
+        pause2.style.opacity = '0';
+        play.style.opacity = '1';
         state = 'play';
         audio.pause();
     }
 }
 
-// playIconContainer.addEventListener('click', playFunction, false);
-playIconContainer.addEventListener('mouseup', playFunction, false);
-// playIconContainer.addEventListener("mouseup" playFunction, false);
+playButton.addEventListener('click', playFunction);
